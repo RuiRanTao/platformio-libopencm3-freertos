@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "rcc.h": "c",
+        "task.h": "c",
+        "freertos.h": "c",
+        "gpio.h": "c",
+        "usart.h": "c",
+        "usart_common_f124.h": "c",
+        "usart_common_all.h": "c",
+        "spi.h": "c",
+        "spi_common_v1.h": "c",
+        "timer.h": "c",
+        "uart.h": "c",
+        "i2c.h": "c",
+        "i2c_common_v1.h": "c",
+        "flash.h": "c",
+        "iwdg.h": "c",
+        "iwdg_common_all.h": "c",
+        "iic_dup.h": "c",
+        "buzzer.h": "c",
+        "at24c02.h": "c",
+        "adc.h": "c",
+        "func_common.h": "c",
+        "ee_iic.h": "c",
+        "queue.h": "c",
+        "dma.h": "c",
+        "dma_common_l1f013.h": "c"
+    }
+}
