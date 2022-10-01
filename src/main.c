@@ -21,6 +21,7 @@
 #include "ee_iic.h"
 #include "queue.h"
 #include "task_.h"
+#include "boot.h"
 
 
 int i, j = 0, c = 0;
@@ -96,11 +97,11 @@ spi_setup();
 iwdg_set_period_ms(1000);
 iwdg_start();
 id = SPI_Flash_ReadID();
+AT24C02_write_data(str_gotoapp, 0,  3 );
 
 // Turn LED off
 gpio_set(GPIOA, GPIO1);
 printf("start id: %d\n",id);
-
 
 H_link = (LNode *)malloc(sizeof(LNode));  //定义一个带有头结点的链表
 //设置队头指针和队尾指针，当队列中没有元素时，队头和队尾指向同一块地址

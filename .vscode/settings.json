@@ -24,6 +24,8 @@
         "ee_iic.h": "c",
         "queue.h": "c",
         "dma.h": "c",
-        "dma_common_l1f013.h": "c"
+        "dma_common_l1f013.h": "c",
+        "boot.h": "c",
+        "scb.h": "c"
     }
 }

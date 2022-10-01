@@ -1,6 +1,7 @@
 #include"func_common.h"
 #include <stdarg.h>
 #include<stdio.h>
+#include<string.h>
 #include <libopencm3/stm32/usart.h>
 
 int Sum(int Num, ...)
@@ -47,6 +48,18 @@ void float2char(float slope,char*buffer,int n)	//浮点型数，存储的字符�
 	buffer[n-1] = '\0';
 }
 
+void PrintFloat(float value)
+{
+    int tmp,tmp1,tmp2,tmp3,tmp4,tmp5,tmp6;
+    tmp = (int)value;
+    tmp1=(int)((value-tmp)*10)%10;
+    tmp2=(int)((value-tmp)*100)%10;
+    tmp3=(int)((value-tmp)*1000)%10;
+    tmp4=(int)((value-tmp)*10000)%10;
+    tmp5=(int)((value-tmp)*100000)%10;
+    tmp6=(int)((value-tmp)*1000000)%10;
+    printf("f-value=%d.%d%d%d%d%d%d\r\n",tmp,tmp1,tmp2,tmp3,tmp4,tmp5,tmp6);
+}
 
 void checkCPU(void)
 {

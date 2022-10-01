@@ -21,6 +21,7 @@ float f_2 = 0;
 char buf_1[10]={0};
 char buf_2[10]={0};
 uint8_t rand_num = 0;
+    float ab = 2.354954;
 
 
 void fun_task_3(void)
@@ -44,7 +45,6 @@ void fun_task_3(void)
 	num1+=deg1;num2+=deg2;
 	f_1 = 180*cos((float)num1*PI/180);
 	f_2 = 180*sin((float)num2*PI/180);
-	// sprintf(buf, "%f",9.0);
 	float2char(f_1,buf_1,10);
 	float2char(f_2,buf_2,10);
 	printf("channels: %d, %d, %d, %s, %s\n",\
