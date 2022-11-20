@@ -27,5 +27,6 @@
         "dma_common_l1f013.h": "c",
         "boot.h": "c",
         "scb.h": "c"
-    }
+    },
+    "RTT_Studio.Build.Parallel_Jobs": "12"
 }

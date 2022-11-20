@@ -81,9 +81,10 @@ static void task3(void *args __attribute__((unused))) {	for (;;) { 		fun_task_3(
 int main(void) {
 // Setup main clock, using external 8MHz crystal 
 rcc_clock_setup_in_hse_8mhz_out_72mhz();
-
+rcc_periph_clock_enable(RCC_ADC1);
 gpio_setup();
 usart_setup();
+adc_setup();
 ee_iic_init();
 // Set pinmode for PB5 BEEP
 gpio_set_mode(
